@@ -9,7 +9,11 @@ module.exports = {
     watchContentBase: true,
     port: 8080,
   },
+  entry: {app: './src/index.js'},
   output: {
+    publicPath: '/js/',
+    filename: '[name].js',
+    library: ['com', 'example'],
     libraryTarget: 'umd'
   }
 };
